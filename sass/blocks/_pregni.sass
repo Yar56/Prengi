@@ -1,12 +1,10 @@
 .pregni
-    min-height: 895px
+    min-height: 700px
     .tabs
         display: flex
         flex-direction: row
         justify-content: space-around
         margin-top: 80px
-        &_mt
-            margin-top: 50px
         &__item
             position: relative
             display: flex
@@ -31,32 +29,11 @@
                 width: 70%
                 &_bold
                     font-weight: 700
-    .block
-        .arrow 
-            position: relative
-            display: inline-block
-            width: 3rem
-            height: 5rem
-            margin: 2rem
-            &::before 
-                content: ''
-                display: block
-                position: absolute
-                top: 50%
-                border: 7px solid #7a696963
-                width: 5rem
-                height: 5rem
-                transform: translateY(-50%) rotate(135deg)  
-            &_left::before 
-                display: none
-                left: 10px
-                border-right: 0
-                border-top: 0
-            &_right::before 
-                right: 50px
-                border-left: 1px
-                border-bottom: 1px
     .text-block
+        display: block
+        margin: 0 auto
+        text-align: center
+        margin-top: 50px
         &__descr
             font-size: 48px
             font-weight: 700

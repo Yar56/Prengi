@@ -14,38 +14,43 @@
     <header class="head">
         <div class="container">
             <nav>
-                <ul>
-                    <li>
+                <ul class="address">
+                    <li class="address__item">
                         <div class="flag"><img src="icons/header/icon_1.png" alt=""></div>
                         <div class="country">Ukraine</div>
                         <a href="tel:+3806393007002" class="tel">tel. +38(063) 930 07 002</a>
-                        <span class="text-info">hi@vasolutions.com.ua</span>
+                        <span class="text-info text-info_adaptive">hi@vasolutions.com.ua</span>
                     </li>
-                    <li>
+                    <li class="address__item">
                         <div class="flag"><img src="icons/header/icon_2.png" alt=""></div>
                         <div class="country">Germany</div>
-                        <span class="text-info">Trierer Strabe 35, 54329 Konz</span>
+                        <span class="text-info text-info_adaptive">Trierer Strabe 35, 54329 Konz</span>
                         <a href="tel:+352661880305" class="tel">tel. +352 661 88 03 05</a>
                     </li>
-                    <li>
+                    <li class="address__item">
                         <div class="flag"><img src="icons/header/icon_3.png" alt=""></div>
                         <div class="country">Estonia</div>
-                        <span class="text-info">K. Karbery 16/27, 13812 Tallinn</span>
+                        <span class="text-info text-info_adaptive">K. Karbery 16/27, 13812 Tallinn</span>
                         <a href="tel:+352661880305" class="tel">tel. +352 661 88 03 05</a>
                     </li>
-                    <li>
+                    <li class="address__item">
                         <div class="flag"><img src="icons/header/icon_4.png" alt=""></div>
                         <div class="country">Great Britain</div>
-                        <span class="text-info">E20LP, Golden vc House, London</span>
+                        <span class="text-info text-info_adaptive">E20LP, Golden vc House, London</span>
                         <a href="tel:+447501095529" class="tel">tel. +44 750 109 55 29</a>
                     </li>
-                    <li>
+                    <li class="address__item">
                         <div class="flag"><img src="icons/header/icon_5.png" alt=""></div>
                         <div class="country">Luxembourg</div>
                         <span class="text-info">2,Rue d`Avalon, L-1159 Luxembourg</span>
                         <a href="tel:+352661880305" class="tel">tel. +352 661 88 03 05</a>
                     </li>
                 </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </nav>
         </div>
     </header>
@@ -54,8 +59,8 @@
         <section class="smartphone">
             <div class="container">
                 <div class="row justify-content-between align-items-baseline pt-5">
-                    <div class="col-xl-2"><img src="icons/logo/logo_1.png" alt=""></div>
-                    <div class="col-xl-6 offset-xl-4">
+                    <div class="col-xl-2 col-lg-3 col-md-4"><img src="icons/logo/logo_1.png" alt=""></div>
+                    <div class="col-xl-6 offset-xl-4 col-lg-7 col-md-8 pt-5">
                         <ul class="nav">
                             <li class="nav__item"><a href="#">главная</a></li>
                             <li class="nav__item"><a href="#">Модули</a></li>
@@ -65,13 +70,13 @@
                         </ul>
                     </div>
                 </div>
-                <div class="row text">
-                    <div class="col-xl-6 text__title">
+                <div class="row text  text-center">
+                    <div class="col-xl-6 text__title col-lg-6 col-md-5">
                         <h1 class="bisiness">Управляй своим бизнесом через Smartphone</h1>
                         <span class="pregni-descr">PRENGI - Платформа для прозрачного управления бизнесом</span>
                         <button class="btn">Получить доступ</button>
                     </div>
-                    <div class="col-xl-5 offset-xl-1 text__smartphone">
+                    <div class="col-xl-5 offset-xl-1 text__smartphone col-lg-6 col-md-7">
                         <img src="icons/iphone/phone.png" alt="phone">
                     </div>
                 </div>
@@ -93,18 +98,13 @@
                         <span class="text">Сложно строить прогнозы и анализировать данные?</span>
                     </div>
                 </div>
-                <div class="row block">
-                    <div class="col-xl-3 offset-xl-5">
-                        <div class="arrow arrow_left"></div>
-                        <div class="arrow arrow_right"></div>
-                    </div>
-                </div>
-                <div class="row text-block">
-                    <div class="col-xl-3 offset-xl-5">
+
+                <div class="row ">
+                    <div class="col-xl-3 text-block">
                         <p class="text-block__descr">С PRENGI</p>
                     </div>
                 </div>
-                <div class="row tabs tabs_mt">
+                <div class="row tabs">
                     <div class="col-xl-4 tabs__item">
                         <img src="icons/with-prengi/icon_4.png" alt="" class="img">
                         <span class="text text_bold">Все затраты спланированы и расписаны</span>
@@ -163,7 +163,7 @@
         <section class="data">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-6 offset-xl-3">
+                    <div class="col-xl-6 offset-xl-3 col-md-7 offset-md-3">
                         <div class="data__title">
                             Варианты развертывания <br> Ваших данных
                         </div>
@@ -171,7 +171,7 @@
                 </div>
                 <div class="row">
                     <div class="data__wrapper">
-                        <div class="col-xl-6 text-right ">
+                        <div class="col-xl-6 text-right">
                             <div class="wrap-text">
                                 <div class="data__p">Облачное хранилище</div>
                                 <div class="data__descr">Это выделенное пользователю пространство на жестком диске сервера, находящегося в Интернете.</div>
@@ -195,15 +195,15 @@
                     </div>
                 </div>
                 <div class="row touch__title">
-                    <div class="col-xl-6 offset-xl-3 touch-descr">
+                    <div class="col-xl-6 offset-xl-3 touch-descr col-md-8 offset-md-2">
                         Приступить очень просто!
                     </div>
-                    <div class="col-xl-8 offset-xl-2 touch-descr">
+                    <div class="col-xl-8 offset-xl-2 touch-descr col-md-10 offset-md-1">
                         Нужно получить доступ и начать работу!
                     </div>
                 </div>
                 <div class="row touch__btn">
-                    <div class="col-xl-4 offset-xl-4">
+                    <div class="col-xl-4 offset-xl-4 col-md-6 offset-md-3">
                         <button class="btn" id="buton">связаться с нами</button>
                     </div>
                 </div>

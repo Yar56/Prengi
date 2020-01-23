@@ -2,7 +2,7 @@
     background-color: #ffff
     min-height: 86px
     nav 
-        ul
+        .address
             display: flex
             flex-direction: row
             list-style-type: none
@@ -30,3 +30,113 @@
                     font-weight: 300
                     color: #242424
                     font-size: 12px
+        .hamburger
+	        display: none
+
+@media screen and ( max-width: 1280px )
+    .head
+        nav
+            .address
+                justify-content: space-around
+
+@media screen and ( max-width: 1024px )
+    .head
+        min-height: 100px
+        nav
+            .address
+                justify-content: space-around
+                li
+                    width: 15%
+
+
+@media screen and ( max-width: 768px )
+    .head
+        position: fixed
+        width: 100%
+        min-height: 40px
+        background-color: #212121
+        opacity: 0.9
+        z-index: 5
+        nav
+            .address
+                position: fixed
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                top: 0
+                left: -100%
+                width: 50%
+                height: 100vh
+                padding: 20px 15px
+                background-color: rgba(0,0,0, .9)
+                transition: 0.6s all
+                z-index: 2
+                &_active 
+                    left: 0
+                    
+                li
+                    padding-right: 0
+                    border: none
+                    margin: 10px 0
+                    width: 56%
+                    &:last-child
+                        display: none
+                    .country
+                        color: $text-color
+                        font-size: 18px
+                        font-weight: 700
+                    .tel
+                        font-weight: 300
+                        color: $text-color
+                        font-size: 16px
+                    .text-info_adaptive
+                        color: $text-color
+                        font-weight: 300
+                        font-size: 16px
+
+            .hamburger
+                display: block
+                position: absolute
+                right: 10px
+                top: 48.5%
+                transform: translateY(-50%)
+                width: 26px
+                height: 12px
+                span 
+                    display: block 
+                    height: 2px
+                    width: 100%
+                    background-color: #fff 
+                    margin-bottom: 2px
+                    transition: 0.5s all
+                &_active 
+                    span 
+                        margin-bottom: -2px 
+                        &:nth-child(1)
+                            transform: translateY(3px) rotate(-45deg)
+                        &:nth-child(2)
+                            display: none
+                        &:nth-child(3)
+                            transform: translateY(3px) rotate(45deg)
+
+@media screen and ( max-width: 575px )
+    .head
+        nav
+            .address
+                li
+                    width: 60%
+                    .country
+                        color: $text-color
+                        font-size: 16px
+                        font-weight: 700
+                    .tel
+                        font-weight: 300
+                        color: $text-color
+                        font-size: 14px
+                    .text-info_adaptive
+                        color: $text-color
+                        font-weight: 300
+                        font-size: 14px
+            .hamburger
+                right: 20px
+                top: 51.5%
