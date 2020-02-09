@@ -568,7 +568,7 @@ template {
 }
 
 .smartphone {
-  background: url("../../img/background/bg_1.jpg") center center/cover no-repeat;
+  background: url("../img/background/bg_1.jpg") center center/cover no-repeat;
   min-height: 700px;
 }
 
@@ -840,7 +840,7 @@ template {
 }
 
 .data {
-  background: url("../../icons/your_data/key.jpg"), url("../../icons/your_data/server.jpg");
+  background: url("../icons/your_data/key.jpg"), url("../icons/your_data/server.jpg");
   background-repeat: no-repeat;
   background-size: 50.2%;
   background-position: left, right;
